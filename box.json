@@ -1,0 +1,32 @@
+{
+    "name":"Recaptcha v2.0",
+    "version":"1.0.0",
+    "author":"Sean Daniels <sdaniels@padawan.net>",
+    "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
+    "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/sjdaniels/coldbox-recaptcha-module.git"
+    },
+    "slug":"recaptcha2",
+    "shortDescription":"Provides viewlet for including Google's v2.0 Recaptcha, an API interface and a Validator for use with cbvalidation",
+    "type":"modules",
+    "packageDirectory":"recaptcha",
+    "keywords":[
+        "recaptcha"
+    ],
+    "private":false,
+    "engines":[
+        {
+            "type":"lucee",
+            "version":">4.5"
+        },
+        {
+            "type":"adobe",
+            "version":">9.02"
+        }
+    ],
+    "dependencies":{
+        "cbvalidation":"1.1.0"
+    }
+}
