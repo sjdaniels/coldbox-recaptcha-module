@@ -27,6 +27,6 @@
         }
     ],
     "dependencies":{
-        "cbvalidation":"1.1.0"
+        "cbvalidation":"stable"
     }
 }
