@@ -4,6 +4,8 @@
     "author":"Sean Daniels <sdaniels@padawan.net>",
     "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
     "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
+    "location":"https://github.com/sjdaniels/coldbox-recaptcha-module.git",
+    "directory":"modules",
     "repository":{
         "type":"git",
         "URL":"https://github.com/sjdaniels/coldbox-recaptcha-module.git"
