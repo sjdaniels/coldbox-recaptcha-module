@@ -1,11 +1,10 @@
 {
     "name":"Recaptcha v2.0",
-    "version":"1.0.1",
+    "version":"1.0.0+0002",
     "author":"Sean Daniels <sdaniels@padawan.net>",
     "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
     "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
-    "location":"https://github.com/sjdaniels/coldbox-recaptcha-module.git",
-    "directory":"modules",
+    "location":"https://github.com/sjdaniels/coldbox-recaptcha-module/archive/master.zip",
     "repository":{
         "type":"git",
         "URL":"https://github.com/sjdaniels/coldbox-recaptcha-module.git"
