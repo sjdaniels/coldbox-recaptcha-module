@@ -1,4 +1,4 @@
-# ColdBox ReCAPTCHA v2.0 Module
+# ColdBox ReCAPTCHA Google v2.0 Module
 
 This module contains helpers for using Google's ReCAPTCHA API.
 

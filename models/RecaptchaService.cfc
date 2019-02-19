@@ -4,7 +4,7 @@
 component singleton accessors="true"{
 
 	// DI
-	property name="config"			inject="coldbox:modulesettings:recaptcha2";
+	property name="config" inject="coldbox:modulesettings:recaptcha2";
 
 	/**
 	* Google Secret Key
