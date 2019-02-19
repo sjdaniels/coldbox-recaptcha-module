@@ -1,11 +1,16 @@
 component {
+
 	// Module Properties
 	this.title 				= "recaptcha";
 	this.author 			= "Sean Daniels";
-	this.webURL 			= "";
-	this.description 		= "";
-	this.version			= "1.0.0";
+	this.description 		= "Google Recaptcha Module";
 
-	function configure(){	
+	function configure(){
+
+		settings = {
+			apiUrl    = 'https://www.google.com/recaptcha/api/siteverify',
+			secretKey = "",
+			publicKey = ""
+		}
 	}
 }

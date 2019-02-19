@@ -1,6 +1,6 @@
 {
     "name":"Recaptcha v2.0",
-    "version":"1.0.0+0002",
+    "version":"2.0.0",
     "author":"Sean Daniels <sdaniels@padawan.net>",
     "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
     "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
@@ -16,18 +16,14 @@
     "keywords":[
         "recaptcha"
     ],
-    "private":false,
-    "engines":[
-        {
-            "type":"lucee",
-            "version":">4.5"
-        },
-        {
-            "type":"adobe",
-            "version":">9.02"
-        }
-    ],
     "dependencies":{
         "cbvalidation":"stable"
-    }
+    },
+    "contributors":[
+        "Luis Majano <lmajano@ortussolutions.com>"
+	],
+	"ignore":[
+        "**/.*",
+        "test-harness"
+    ]
 }
