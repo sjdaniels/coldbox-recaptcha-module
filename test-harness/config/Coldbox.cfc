@@ -71,7 +71,7 @@
 		};
 
 		moduleSettings = {
-			recaptcha2 = {
+			recaptcha = {
 				secretkey = getSystemSetting( "RECAPTCHA_SECRET_KEY", "" ),
 				publicKey = getSystemSetting( "RECAPTCHA_PUBLIC_KEY", "" )
 			}

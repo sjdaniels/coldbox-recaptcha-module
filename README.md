@@ -43,7 +43,7 @@ In any form you wish to add the reCaptcha widget use the following:
 <div class="form-group">
 #renderview(
 	view="widget",
-	module="recaptcha2",
+	module="recaptcha",
 	args={
 		size = "normal" // normal or compact
 	}
@@ -66,7 +66,7 @@ In your handler for the post of the form, or in a model object you can then use 
 ```js
 this.constraints = {
 	"body" 	: { required : true },
-	"recaptcha" : { validator: "Validator@recaptcha2" }
+	"recaptcha" : { validator: "Validator@recaptcha" }
 }
 ```
 
@@ -74,10 +74,10 @@ In the above example, your handler would just need to set the recaptcha property
 
 ### Manual Validation
 
-There also is a `RecaptchaService@recaptcha2` Wirebox mapping you can use to validate manually if you prefer to not use the `cbvalidation` integration. In your handler:
+There also is a `RecaptchaService@recaptcha` Wirebox mapping you can use to validate manually if you prefer to not use the `cbvalidation` integration. In your handler:
 
 ```js
-var recaptchaOK = getInstance( "RecaptchaService@recaptcha2" ).isValid( rc[ "g-recaptcha-response" ] );
+var recaptchaOK = getInstance( "RecaptchaService@recaptcha" ).isValid( rc[ "g-recaptcha-response" ] );
 
 if ( !recaptchaOK ){
     writeOutput( "Prove you have a soul!" );

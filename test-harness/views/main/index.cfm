@@ -7,7 +7,7 @@
 <!--- Recaptcha --->
 #renderView(
 	view   = "widget",
-	module = "recaptcha2",
+	module = "recaptcha",
 	args   = {
 		size = "normal"
 	}

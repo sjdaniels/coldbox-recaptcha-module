@@ -9,7 +9,7 @@
 <cfoutput>
 	<div
 		class="g-recaptcha"
-		data-sitekey="#getModuleSettings( "recaptcha2" ).publicKey#"
+		data-sitekey="#getModuleSettings( "recaptcha" ).publicKey#"
 		data-size="#args.size#"
 	></div>
 </cfoutput>

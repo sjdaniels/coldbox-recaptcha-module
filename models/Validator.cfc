@@ -11,7 +11,7 @@ component accessors="true" implements="cbvalidation.models.validators.IValidator
 	/**
 	 * Recaptcha Service
 	 */
-    property name="recaptchaService" inject="RecaptchaService@recaptcha2";
+    property name="recaptchaService" inject="RecaptchaService@recaptcha";
 
 	/**
 	 * Constructor

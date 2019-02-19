@@ -1,5 +1,5 @@
 {
-    "name":"recaptcha2-lucee@5",
+    "name":"recaptcha-lucee@5",
     "app":{
         "serverHomeDirectory":".engine/lucee5",
         "cfengine":"lucee@5"

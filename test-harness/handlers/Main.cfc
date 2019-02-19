@@ -1,6 +1,6 @@
 ﻿component{
 
-	property name="recaptchaService" inject="RecaptchaService@recaptcha2";
+	property name="recaptchaService" inject="RecaptchaService@recaptcha";
 
 	function index( event, rc, prc ){
 		event.setView( "main/index" );

@@ -1,5 +1,5 @@
 {
-    "name":"recaptcha2-adobe@11",
+    "name":"recaptcha-adobe@11",
     "app":{
         "serverHomeDirectory":".engine/adobe11",
         "cfengine":"adobe@11"
