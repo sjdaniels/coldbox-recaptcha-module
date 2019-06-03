@@ -11,6 +11,6 @@ component {
 			apiUrl    = 'https://www.google.com/recaptcha/api/siteverify',
 			secretKey = "",
 			publicKey = ""
-		}
+		};
 	}
 }
