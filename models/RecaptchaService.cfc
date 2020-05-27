@@ -60,18 +60,19 @@ component singleton accessors="true"{
 	 */
 	struct function httpSend( required string response, string remoteIP ){
 
-		var httpService = new http(
-			method  = "post",
+		 cfhttp(
+			method  = "POST",
 			url 	= config.apiUrl,
-			timeout = 10
-		);
+			timeout = 10,
+			result = "result"
+		) {
+			cfhttpparam( type = "header",    name="Content-Type", value = "application/x-www-form-urlencoded" );
+			cfhttpparam( type = "formfield", name="response", 	 value = arguments.response );
+			cfhttpparam( type = "formfield", name="remoteip",  	 value = arguments.remoteIp );
+			cfhttpparam( type = "formfield", name="secret",		 value = getSecretKey() )
+		}
 
-	    httpService.addParam( type="header",    name="Content-Type", value="application/x-www-form-urlencoded");
-	    httpService.addParam( type="formfield", name="response", 	 value="#arguments.response#");
-	    httpService.addParam( type="formfield", name="remoteip",  	 value="#arguments.remoteIp#");
-	    httpService.addParam( type="formfield", name="secret",		 value="#getSecretKey()#");
-
-		return httpService.send().getPrefix();
+		return result;
 	}
 
 	/*********************************** PRIVATE ***********************************/
