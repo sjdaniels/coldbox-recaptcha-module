@@ -69,7 +69,7 @@ component singleton accessors="true"{
 			cfhttpparam( type = "header",    name="Content-Type", value = "application/x-www-form-urlencoded" );
 			cfhttpparam( type = "formfield", name="response", 	 value = arguments.response );
 			cfhttpparam( type = "formfield", name="remoteip",  	 value = arguments.remoteIp );
-			cfhttpparam( type = "formfield", name="secret",		 value = getSecretKey() )
+			cfhttpparam( type = "formfield", name="secret",		 value = getSecretKey() );
 		}
 
 		return result;
