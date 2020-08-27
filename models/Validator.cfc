@@ -31,11 +31,12 @@ component accessors="true" implements="cbvalidation.models.validators.IValidator
      * @validationData The validation data the validator was created with
      */
     boolean function validate(
-		required cbvalidation.models.result.IValidationResult validationResult,
+		required any validationResult,
 		required any target,
 		required string field,
 		any targetValue,
-		any validationData
+		any validationData,
+		struct rules
 	){
         var result = recaptchaService.isValid( arguments.targetValue ?: "" );
 
