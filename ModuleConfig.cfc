@@ -9,6 +9,7 @@ component {
 
 		settings = {
 			apiUrl    = 'https://www.google.com/recaptcha/api/siteverify',
+			scriptUrl = 'https://www.google.com/recaptcha/api.js',
 			secretKey = "",
 			publicKey = ""
 		};

@@ -1,6 +1,6 @@
 {
     "name":"Recaptcha Google v2.0",
-    "version":"2.2.0",
+    "version":"2.3.0",
     "author":"Sean Daniels <sdaniels@padawan.net>",
     "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
     "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
@@ -20,10 +20,14 @@
         "cbvalidation":"stable"
     },
     "contributors":[
-        "Luis Majano <lmajano@ortussolutions.com>"
-	],
-	"ignore":[
+        "Luis Majano <lmajano@ortussolutions.com>",
+        "Dave <dave@angrysam.com>"
+    ],
+    "ignore":[
         "**/.*",
         "test-harness"
-    ]
+    ],
+    "installPaths":{
+        "cbvalidation":"modules/cbvalidation/"
+    }
 }

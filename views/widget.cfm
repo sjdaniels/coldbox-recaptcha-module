@@ -3,7 +3,7 @@
 </cfscript>
 <cfoutput>
 	<cfif isnull( prc.recaptcha_inited )>
-		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" defer></script>
+		<script type="text/javascript" src="#getModuleSettings( "recaptcha" ).scriptURL#" defer></script>
 		<cfset prc.recaptcha_inited = true>
 	</cfif>
 	<div
