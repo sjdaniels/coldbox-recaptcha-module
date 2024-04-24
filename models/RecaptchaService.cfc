@@ -59,12 +59,13 @@ component singleton accessors="true"{
 	 * @remoteIP The remote IP
 	 */
 	struct function httpSend( required string response, string remoteIP ){
+		var result = 0; // definitely assigned by cfhttp statement
 
-		 cfhttp(
+		cfhttp(
 			method  = "POST",
 			url 	= config.apiUrl,
 			timeout = 10,
-			result = "result"
+			result = "local.result"
 		) {
 			cfhttpparam( type = "header",    name="Content-Type", value = "application/x-www-form-urlencoded" );
 			cfhttpparam( type = "formfield", name="response", 	 value = arguments.response );
