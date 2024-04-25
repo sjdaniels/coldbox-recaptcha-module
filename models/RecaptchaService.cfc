@@ -59,12 +59,11 @@ component singleton accessors="true"{
 	 * @remoteIP The remote IP
 	 */
 	struct function httpSend( required string response, string remoteIP ){
-
-		 cfhttp(
+		cfhttp(
 			method  = "POST",
 			url 	= config.apiUrl,
 			timeout = 10,
-			result = "result"
+			result = "local.result"
 		) {
 			cfhttpparam( type = "header",    name="Content-Type", value = "application/x-www-form-urlencoded" );
 			cfhttpparam( type = "formfield", name="response", 	 value = arguments.response );
@@ -72,7 +71,7 @@ component singleton accessors="true"{
 			cfhttpparam( type = "formfield", name="secret",		 value = getSecretKey() );
 		}
 
-		return result;
+		return local.result;
 	}
 
 	/*********************************** PRIVATE ***********************************/
