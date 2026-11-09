@@ -1,6 +1,6 @@
 {
     "name":"Recaptcha Google v2.0",
-    "version":"2.4.2",
+    "version":"2.4.3",
     "author":"Sean Daniels <sdaniels@padawan.net>",
     "homepage":"https://github.com/sjdaniels/coldbox-recaptcha-module",
     "documentation":"https://github.com/sjdaniels/coldbox-recaptcha-module/blob/master/README.md",
