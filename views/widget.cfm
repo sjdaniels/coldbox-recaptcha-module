@@ -11,6 +11,6 @@
 		class="g-recaptcha"
 		data-sitekey="#getModuleSettings( "recaptcha" ).publicKey#"
 		data-size="#args.size#"
-		data-theme="#args.theme#
+		data-theme="#args.theme#"
 	></div>
 </cfoutput>
